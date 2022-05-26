@@ -17,7 +17,7 @@ bfs(graph, 'A')
 
 
 def dfs(graph, start):
-    visited, stack = set(), [start] # ❌ Because set() is not ordered, the order of node visits is lost.
+    visited, stack = set(), [start]
     while stack:
         vertex = stack.pop()
         if vertex not in visited:
